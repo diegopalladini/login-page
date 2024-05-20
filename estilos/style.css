@@ -28,7 +28,7 @@ section#login {
     position: absolute; /* para a section estar sempre no meio da tela */
     top: 50%; /* para a section estar sempre no meio da tela */
     left: 50%; /* para a section estar sempre no meio da tela */
-    transform: translate(-50%, -50%); /* para a section estar sempre no meio da tela */
+
 
     overflow: hidden; /* para esconder o que estiver de fora e, consequentemente, arredondar as bordas da div#imagem que está dentro desta section */
     
@@ -38,6 +38,7 @@ section#login {
     border-radius: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.747);
 
+    transform: translate(-50%, -50%); /* para a section estar sempre no meio da tela */    
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -70,7 +71,8 @@ form > div.campo {
     width: 100%;
     height: 40px;
     display: block;
-    border-radius: 5px;
+    border: 2px solid #5f2c82;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
@@ -78,7 +80,27 @@ div.campo > label {
     display: none;
 }
 
+div.campo > span {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
 
+div.campo > input {
+    background-color: #98eeeb;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100% ;
+    border: none;
+    border-radius: 8px;
+    transform: translateY(-12px);
+}
+
+div.campo > input:focus-within {
+    background-color: yellow;
+} 
 
 form > input[type=submit] {
     display: block;
