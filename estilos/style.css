@@ -56,7 +56,17 @@ section#login > div#formulario {
 
 }
 
-section#login > div#formulario > h1 {
+div#formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: .8em;
+}
+
+div#formulario a {
+    text-decoration: none;
+    border: 2px solid #49a09d;
+    border-radius: 10px;
 }
