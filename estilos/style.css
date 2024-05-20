@@ -19,6 +19,41 @@ body, html {
 }
 
 main {
+    position: relative; /* para a section estar sempre no meio da tela */
     height: 100vh;
     width: 100vw;
+}
+
+section#login {
+    position: absolute; /* para a section estar sempre no meio da tela */
+    top: 50%; /* para a section estar sempre no meio da tela */
+    left: 50%; /* para a section estar sempre no meio da tela */
+    transform: translate(-50%, -50%); /* para a section estar sempre no meio da tela */
+
+    overflow: hidden; /* para esconder o que estiver de fora e, consequentemente, arredondar as bordas da div#imagem que está dentro desta section */
+    
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.747);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url(../imagens/pattern.jpg);
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+
+}
+
+section#login > div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
 }
